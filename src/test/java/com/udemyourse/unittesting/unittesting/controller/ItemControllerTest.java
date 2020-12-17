@@ -37,7 +37,7 @@ public class ItemControllerTest {
     //call "/dummy-item" application/json
     RequestBuilder request = MockMvcRequestBuilders
         .get("/dummy-item")
-        .accept(MediaType.APPLICATION_JSON);
+        .accept(MediaType.APPLICATION_JSON); 
     
     MvcResult result = mockMvc.perform(request)
         .andExpect(status().isOk()) // can also use status codes
